@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:intentui.com)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(php artisan:*)",
+      "Bash(git config:*)",
+      "Bash(cmdkey:*)",
+      "Bash(findstr:*)"
+    ]
+  }
+}
