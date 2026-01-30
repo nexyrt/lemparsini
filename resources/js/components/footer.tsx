@@ -168,7 +168,7 @@ export function Footer() {
             ))}
           </div>
           <p className="mt-8 text-muted-fg text-xs leading-5 md:order-1 md:mt-0">
-            &copy; {new Date().getFullYear()} VEAST. Semua hak dilindungi.
+            &copy; {new Date().getFullYear()} lemparsini.com. Semua hak dilindungi.
           </p>
         </div>
       </div>

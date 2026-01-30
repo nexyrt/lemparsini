@@ -1,14 +1,22 @@
 import type React from "react"
-import { Avatar } from "@/components/ui/avatar"
 
-export function Logo({ className, ...props }: React.ComponentProps<typeof Avatar>) {
+interface LogoProps extends React.ComponentProps<"img"> {
+  size?: "sm" | "md" | "lg" | "xl"
+}
+
+export function Logo({ className, size = "md", ...props }: LogoProps) {
+  const sizeClasses = {
+    sm: "h-6 w-auto",
+    md: "h-8 w-auto",
+    lg: "h-12 w-auto",
+    xl: "h-16 w-auto"
+  }
+
   return (
-    <Avatar
-      size="sm"
-      src="https://design.intentui.com/logo"
-      className="outline-hidden"
-      isSquare
-      alt="Intent UI"
+    <img
+      src="/logo.png"
+      alt="lemparsini.com"
+      className={`${sizeClasses[size]} ${className || ''}`}
       {...props}
     />
   )

@@ -23,7 +23,7 @@ import {
   NavbarTrigger,
 } from "@/components/ui/navbar"
 import { Logo } from "@/components/logo"
-import { ThemeSwitcher } from "@/components/theme-switcher"
+import { SimpleThemeToggle } from "@/components/simple-theme-toggle"
 import type { SharedData } from "@/types/shared"
 import { Link } from "@/components/ui/link"
 import { ArrowRightEndOnRectangleIcon } from "@heroicons/react/24/outline"
@@ -37,17 +37,17 @@ const navigations = [
   {
     name: "Template",
     textValue: "Template",
-    href: "/#categories",
+    href: "/#templates",
+  },
+  {
+    name: "Cara Kerja",
+    textValue: "Cara Kerja",
+    href: "/#how-it-works",
   },
   {
     name: "Harga",
     textValue: "Harga",
     href: "/#pricing",
-  },
-  {
-    name: "Testimoni",
-    textValue: "Testimoni",
-    href: "/#testimonials",
   },
 ]
 
@@ -60,8 +60,8 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
     <NavbarProvider isOpen={isOpen} onOpenChange={setIsOpen}>
       <Navbar {...props}>
         <NavbarStart>
-          <Link href="/" aria-label="Goto homepage">
-            <Logo />
+          <Link href="/" aria-label="Goto homepage" className="flex items-center">
+            <Logo className="h-7 sm:h-8" />
           </Link>
         </NavbarStart>
         <NavbarGap />
@@ -72,16 +72,10 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
               {item.name}
             </NavbarItem>
           ))}
-          <NavbarItem target="_blank" href="https://intentui.com" className="justify-between">
-            Documentation
-          </NavbarItem>
-          <NavbarItem target="_blank" href="https://design.intentui.com">
-            Blocks
-          </NavbarItem>
         </NavbarSection>
         <NavbarSpacer />
         <NavbarSection className="ml-auto hidden gap-x-2 lg:flex">
-          <ThemeSwitcher />
+          <SimpleThemeToggle />
           {auth.user ? (
             <UserMenu />
           ) : (
@@ -98,7 +92,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
         <NavbarTrigger />
         <NavbarSpacer />
         <NavbarSection>
-          <ThemeSwitcher />
+          <SimpleThemeToggle />
           {auth.user ? (
             <UserMenu />
           ) : (

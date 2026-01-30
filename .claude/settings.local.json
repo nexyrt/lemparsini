@@ -6,7 +6,13 @@
       "Bash(php artisan:*)",
       "Bash(git config:*)",
       "Bash(cmdkey:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "WebFetch(domain:www.wevitation.com)",
+      "WebFetch(domain:kekondangan.id)",
+      "WebFetch(domain:seremoni.id)",
+      "WebFetch(domain:indoinvite.com)",
+      "WebFetch(domain:menica.pro)",
+      "Bash(ipconfig:*)"
     ]
   }
 }

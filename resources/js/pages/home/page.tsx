@@ -31,7 +31,7 @@ interface HomeProps {
 export default function Home({ categories }: HomeProps) {
   return (
     <>
-      <Head title="VEAST - Undangan Digital Modern & Elegan" />
+      <Head title="lemparsini.com - Undangan Digital Modern & Elegan" />
 
       {/* Hero Section with Video Background */}
       <section className="relative overflow-hidden py-20 sm:py-28 lg:py-32">
@@ -237,7 +237,7 @@ export default function Home({ categories }: HomeProps) {
         <Container>
           <div className="mb-12 text-center">
             <h2 className="mb-4 font-bold text-3xl sm:text-4xl">
-              Fitur Unggulan VEAST
+              Fitur Unggulan lemparsini.com
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-muted-fg">
               Platform lengkap dengan berbagai fitur untuk membuat acara Anda lebih berkesan
@@ -365,7 +365,7 @@ export default function Home({ categories }: HomeProps) {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircleIcon className="size-5 text-muted mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-fg">Watermark VEAST</span>
+                    <span className="text-sm text-muted-fg">Watermark lemparsini.com</span>
                   </li>
                 </ul>
                 <Button className="mt-6 w-full" intent="outline" asChild>
@@ -498,7 +498,7 @@ export default function Home({ categories }: HomeProps) {
               Apa Kata Mereka?
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-muted-fg">
-              Ribuan pengguna sudah mempercayai VEAST untuk acara spesial mereka
+              Ribuan pengguna sudah mempercayai lemparsini.com untuk acara spesial mereka
             </p>
           </div>
 
@@ -511,7 +511,7 @@ export default function Home({ categories }: HomeProps) {
                   ))}
                 </div>
                 <CardDescription className="text-base leading-relaxed text-fg">
-                  "Platform yang sangat membantu! Undangan digital kami terlihat sangat elegan dan fitur link personal untuk tamu sangat memudahkan. Terima kasih VEAST!"
+                  "Platform yang sangat membantu! Undangan digital kami terlihat sangat elegan dan fitur link personal untuk tamu sangat memudahkan. Terima kasih lemparsini.com!"
                 </CardDescription>
               </CardHeader>
               <CardContent>

@@ -47,7 +47,7 @@ export default function AppLayout({ children }: PropsWithChildren) {
             <div className="flex items-center gap-2 px-2 py-3">
               <Logo />
               <SidebarLabel>
-                <span className="text-lg font-semibold">VEAST</span>
+                <span className="text-lg font-semibold">lemparsini.com</span>
               </SidebarLabel>
             </div>
           </SidebarHeader>
