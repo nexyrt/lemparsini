@@ -14,7 +14,7 @@ export function Logo({ className, size = "md", ...props }: LogoProps) {
 
   return (
     <img
-      src="/logo.png"
+      src="/logo.webp"
       alt="lemparsini.com"
       className={`${sizeClasses[size]} ${className || ''}`}
       {...props}

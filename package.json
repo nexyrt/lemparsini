@@ -22,6 +22,7 @@
         "husky": "^9.1.7",
         "laravel-vite-plugin": "^2.0.1",
         "shadcn": "^3.6.1",
+        "sharp": "^0.34.5",
         "tailwind-merge": "^3.4.0",
         "tailwind-variants": "^3.2.2",
         "tailwindcss": "^4.1.18",

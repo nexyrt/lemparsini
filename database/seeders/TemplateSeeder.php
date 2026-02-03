@@ -20,7 +20,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Elegant Rose',
                 'slug' => 'elegant-rose',
                 'description' => 'Template undangan akad nikah dengan desain elegant rose gold yang mewah dan modern. Cocok untuk acara pernikahan yang formal dan mewah.',
-                'preview_image' => '/templates/elegant-rose.jpg',
+                'preview_image' => null, // TODO: Add preview image
                 'demo_url' => 'https://demo.lemparsini.com/elegant-rose',
                 'component_path' => 'templates/wedding/ElegantRose',
                 'price' => 0,
@@ -58,7 +58,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Classic White',
                 'slug' => 'classic-white',
                 'description' => 'Template minimalis dengan tema putih klasik. Simple, elegant, dan timeless untuk acara akad nikah yang sakral.',
-                'preview_image' => '/templates/classic-white.jpg',
+                'preview_image' => null, // TODO: Add preview image
                 'demo_url' => 'https://demo.lemparsini.com/classic-white',
                 'component_path' => 'templates/wedding/ClassicWhite',
                 'price' => 99000,
@@ -109,7 +109,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Golden Luxury',
                 'slug' => 'golden-luxury',
                 'description' => 'Template mewah dengan aksen gold dan ornamen islami. Cocok untuk pernikahan adat dengan nuansa elegan dan glamour.',
-                'preview_image' => '/templates/golden-luxury.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/golden-luxury',
                 'component_path' => 'templates/wedding/GoldenLuxury',
                 'price' => 199000,
@@ -172,7 +172,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Modern Floral',
                 'slug' => 'modern-floral',
                 'description' => 'Template resepsi dengan desain floral modern yang fresh dan colorful. Cocok untuk resepsi outdoor atau garden party.',
-                'preview_image' => '/templates/modern-floral.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/modern-floral',
                 'component_path' => 'templates/wedding/ModernFloral',
                 'price' => 0,
@@ -207,7 +207,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Rustic Charm',
                 'slug' => 'rustic-charm',
                 'description' => 'Template dengan tema rustic yang hangat dan natural. Perfect untuk resepsi outdoor dengan konsep vintage.',
-                'preview_image' => '/templates/rustic-charm.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/rustic-charm',
                 'component_path' => 'templates/wedding/RusticCharm',
                 'price' => 99000,
@@ -248,7 +248,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Simple Elegance',
                 'slug' => 'simple-elegance',
                 'description' => 'Template minimalis untuk intimate wedding. Simple namun tetap elegant dan memorable.',
-                'preview_image' => '/templates/simple-elegance.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/simple-elegance',
                 'component_path' => 'templates/wedding/SimpleElegance',
                 'price' => 0,
@@ -280,7 +280,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Happy Birthday Kids',
                 'slug' => 'happy-birthday-kids',
                 'description' => 'Template colorful dan fun untuk ulang tahun anak. Dengan karakter lucu dan animasi ceria.',
-                'preview_image' => '/templates/happy-birthday-kids.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/happy-birthday-kids',
                 'component_path' => 'templates/birthday/HappyBirthdayKids',
                 'price' => 0,
@@ -315,7 +315,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Sweet & Chic',
                 'slug' => 'sweet-and-chic',
                 'description' => 'Template trendy untuk sweet seventeen. Modern, stylish, dan Instagram-worthy.',
-                'preview_image' => '/templates/sweet-and-chic.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/sweet-and-chic',
                 'component_path' => 'templates/birthday/SweetAndChic',
                 'price' => 99000,
@@ -354,7 +354,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Islamic Aqiqah',
                 'slug' => 'islamic-aqiqah',
                 'description' => 'Template aqiqah dengan ornamen islami yang indah. Cocok untuk acara aqiqah yang khidmat dan berkesan.',
-                'preview_image' => '/templates/islamic-aqiqah.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/islamic-aqiqah',
                 'component_path' => 'templates/religious/IslamicAqiqah',
                 'price' => 0,
@@ -389,7 +389,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Gold Aqiqah',
                 'slug' => 'gold-aqiqah',
                 'description' => 'Template aqiqah premium dengan aksen gold yang mewah dan elegant.',
-                'preview_image' => '/templates/gold-aqiqah.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/gold-aqiqah',
                 'component_path' => 'templates/religious/GoldAqiqah',
                 'price' => 99000,
@@ -432,7 +432,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Khitan Celebration',
                 'slug' => 'khitan-celebration',
                 'description' => 'Template khitanan/sunatan dengan desain islami yang ceria dan bermakna.',
-                'preview_image' => '/templates/khitan-celebration.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/khitan-celebration',
                 'component_path' => 'templates/religious/KhitanCelebration',
                 'price' => 0,
@@ -466,7 +466,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Professional Seminar',
                 'slug' => 'professional-seminar',
                 'description' => 'Template professional untuk seminar dan workshop. Clean, modern, dan business-oriented.',
-                'preview_image' => '/templates/professional-seminar.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/professional-seminar',
                 'component_path' => 'templates/corporate/ProfessionalSeminar',
                 'price' => 99000,
@@ -504,7 +504,7 @@ class TemplateSeeder extends Seeder
                 'name' => 'Grand Opening Celebration',
                 'slug' => 'grand-opening-celebration',
                 'description' => 'Template untuk grand opening usaha. Meriah, professional, dan eye-catching.',
-                'preview_image' => '/templates/grand-opening-celebration.jpg',
+                'preview_image' => null,
                 'demo_url' => 'https://demo.lemparsini.com/grand-opening-celebration',
                 'component_path' => 'templates/corporate/GrandOpeningCelebration',
                 'price' => 99000,
@@ -543,11 +543,8 @@ class TemplateSeeder extends Seeder
             $subCategory = SubCategory::where('slug', $subCategorySlug)->first();
 
             if ($subCategory) {
-                // Convert arrays to JSON
-                $templateData['features'] = json_encode($templateData['features']);
-                $templateData['customizable_fields'] = json_encode($templateData['customizable_fields']);
-
                 // Set sub_category_id
+                // Note: Don't json_encode features/customizable_fields - Laravel's array cast handles it
                 $templateData['sub_category_id'] = $subCategory->id;
 
                 Template::create($templateData);

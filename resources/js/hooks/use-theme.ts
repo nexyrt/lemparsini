@@ -16,11 +16,11 @@ const mediaQuery =
 
 const handleSystemThemeChange = () => {
   const currentTheme = localStorage.getItem("theme") as Theme
-  applyTheme(currentTheme || "system")
+  applyTheme(currentTheme || "light")
 }
 
 export function initializeTheme() {
-  const savedTheme = (localStorage.getItem("theme") as Theme) || "system"
+  const savedTheme = (localStorage.getItem("theme") as Theme) || "light"
 
   applyTheme(savedTheme)
 
@@ -32,7 +32,7 @@ export function initializeTheme() {
 }
 
 export function useTheme() {
-  const [theme, setTheme] = useState<Theme>("system")
+  const [theme, setTheme] = useState<Theme>("light")
 
   const updateTheme = (mode: Theme) => {
     setTheme(mode)
@@ -42,7 +42,7 @@ export function useTheme() {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as Theme | null
-    updateTheme(savedTheme || "system")
+    updateTheme(savedTheme || "light")
 
     if (mediaQuery) {
       return () => mediaQuery.removeEventListener("change", handleSystemThemeChange)

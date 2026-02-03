@@ -12,7 +12,10 @@
       "WebFetch(domain:seremoni.id)",
       "WebFetch(domain:indoinvite.com)",
       "WebFetch(domain:menica.pro)",
-      "Bash(ipconfig:*)"
+      "Bash(ipconfig:*)",
+      "Bash(npm run build:*)",
+      "Bash(where:*)",
+      "Bash(npx:*)"
     ]
   }
 }
