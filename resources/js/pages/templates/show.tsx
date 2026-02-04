@@ -66,9 +66,33 @@ export default function TemplateShow({ template, relatedTemplates }: TemplateSho
 
   const category = template.sub_category.category
 
+  const pageTitle = `${template.name} - Template ${category.name} | lemparsini.com`
+  const pageDescription = template.description
+  const pageUrl = `https://lemparsini.com/templates/${category.slug}/${template.slug}`
+  const pageImage = template.preview_image || 'https://lemparsini.com/og-image.jpg'
+
   return (
     <>
-      <Head title={`${template.name} - Template ${category.name} | lemparsini.com`} />
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={pageImage} />
+        <meta property="og:site_name" content="Lemparsini" />
+        <meta property="og:locale" content="id_ID" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={pageUrl} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={pageImage} />
+      </Head>
 
       {/* Breadcrumb */}
       <section className="border-b bg-muted/30">
