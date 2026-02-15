@@ -91,19 +91,19 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
       <NavbarMobile>
         <NavbarTrigger />
         <NavbarSpacer />
-        <NavbarSection>
-          <SimpleThemeToggle />
+        <div className="flex flex-row items-center gap-x-1.5">
+          <SimpleThemeToggle className="size-9" />
           {auth.user ? (
             <UserMenu />
           ) : (
             <>
-              <NavbarItem href="/login">Masuk</NavbarItem>
-              <Button size="sm" asChild>
+              <NavbarItem href="/login" className="px-2 text-sm">Masuk</NavbarItem>
+              <Button size="xs" asChild>
                 <Link href="/register">Daftar</Link>
               </Button>
             </>
           )}
-        </NavbarSection>
+        </div>
       </NavbarMobile>
     </NavbarProvider>
   )

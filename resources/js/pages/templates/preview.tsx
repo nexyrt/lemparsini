@@ -22,9 +22,8 @@ interface TemplatePreviewProps {
 // Dynamic template loader - only register templates that exist
 const templateComponents: Record<string, React.LazyExoticComponent<React.ComponentType<any>>> = {
   'templates/wedding/ElegantRose': lazy(() => import('@/templates/wedding/ElegantRose')),
-  // Add more templates here as they are created:
-  // 'templates/wedding/ClassicWhite': lazy(() => import('@/templates/wedding/ClassicWhite')),
-  // 'templates/wedding/GoldenLuxury': lazy(() => import('@/templates/wedding/GoldenLuxury')),
+  'templates/wedding/ClassicWhite': lazy(() => import('@/templates/wedding/ClassicWhite')),
+  'templates/wedding/GoldenLuxury': lazy(() => import('@/templates/wedding/GoldenLuxury')),
   // 'templates/wedding/ModernFloral': lazy(() => import('@/templates/wedding/ModernFloral')),
   // 'templates/wedding/RusticCharm': lazy(() => import('@/templates/wedding/RusticCharm')),
   // 'templates/wedding/SimpleElegance': lazy(() => import('@/templates/wedding/SimpleElegance')),

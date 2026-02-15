@@ -77,7 +77,7 @@ const navigation = {
 export function Footer() {
   return (
     <footer className="border-t bg-background">
-      <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 pt-16 pb-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-4">
             <Logo />

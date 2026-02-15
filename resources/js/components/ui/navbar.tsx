@@ -156,7 +156,7 @@ const Navbar = ({
         isSticky && "sticky top-0 z-40",
         placement === "top" && intent === "float" && "md:pt-8",
         placement === "bottom" && intent === "float" && "bottom-0 md:pb-8",
-        intent === "float" && "mx-auto w-full max-w-7xl px-4 xl:max-w-(--breakpoint-xl)",
+        intent === "float" && "mx-auto w-full max-w-7xl px-6 xl:max-w-(--breakpoint-xl)",
       ])}
       {...props}
     >
@@ -165,14 +165,14 @@ const Navbar = ({
           "relative isolate hidden py-(--navbar-gutter) [--navbar-gutter:--spacing(2.5)] md:block",
           intent === "float" &&
             "rounded-xl bg-bg py-0 *:data-[navbar=content]:max-w-7xl *:data-[navbar=content]:rounded-xl *:data-[navbar=content]:border *:data-[navbar=content]:bg-navbar *:data-[navbar=content]:px-4 *:data-[navbar=content]:py-(--navbar-gutter) *:data-[navbar=content]:shadow-xs",
-          ["default", "inset"].includes(intent) && "px-4",
+          ["default", "inset"].includes(intent) && "px-6",
           intent === "default" && "border-b bg-navbar",
           className,
         )}
       >
         <div
           data-navbar="content"
-          className="mx-auto w-full max-w-(--breakpoint-2xl) items-center md:flex"
+          className="mx-auto w-full max-w-7xl items-center md:flex"
         >
           {children}
         </div>
@@ -271,7 +271,7 @@ const NavbarMobile = ({ className, ref, ...props }: React.ComponentProps<"div">)
       ref={ref}
       data-slot="navbar-mobile"
       className={twMerge(
-        "group/navbar-mobile flex items-center gap-x-3 px-4 py-2.5 md:hidden",
+        "group/navbar-mobile flex items-center gap-x-3 px-6 py-2.5 md:hidden",
         "group-has-data-navbar-sticky/navbar:sticky group-has-data-navbar-sticky/navbar:bg-navbar",
         // top
         "group-has-data-navbar-sticky/navbar:group-has-data-[placement=top]/navbar:top-0 group-has-data-navbar-sticky/navbar:group-has-data-[placement=top]/navbar:border-b",
